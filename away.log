@@ -1,0 +1,1132 @@
+--- Log opened Sun Jan 13 02:35:40 2002
+02:36 #linuxlatino: 8/<g >/E0xg8/>g eslocate como guardo eso para que no lo haga mas 
+02:37 #linuxlatino: 8/<g >/E0xg8/>g eslocate osea que no tenga que hacer eso a cada rato ?
+02:38 #linuxlatino: 8/<g >/E0xg8/>g eslocate asi mismo 
+--- Log opened Sun Jan 13 10:51:26 2002
+16:17 #debian: 8/<g >/dondelelcarog8/>g eslocate: it doesn't...
+16:18 #debian: 8/<g >/dondelelcarog8/>g eslocate: ? you have some sort of mta installed if you're getting mail...
+16:19 #debian: 8/<g >/dondelelcarog8/>g eslocate: debian won't let you install anything that's capable of sending mail without mail-transport-agent installed...
+16:19 #debian: 8/<g >/T_VoiDg8/>g eslocate: the mta is more for receiving and handling mail queues than just sending (it does too). if it's not running but the binary is there, there are chances you can send mail (but if it fails, it won't be retried). of course depends on each mta...
+16:21 #debian: 8/<g >/FsckItg8/>g eslocate: Debian installs Exim by default
+16:21 #debian: 8/<g >/dondelelcarog8/>g eslocate: default now is exim... it will probably change to something else (postfix or .... depending on politics)
+16:22 #debian: 8/<g >/FsckItg8/>g eslocate: Exim is a MTA, yes
+16:22 #debian: 8/<g >/SpyderMang8/>g eslocate: exim is default on debian
+16:23 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g yep, but how can I upgrade?
+16:23 8/[g4/msg8/(</soco8/)-g8/]g have you read the kernel how to?
+16:24 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g Nope. Is the info there?
+16:24 8/[g4/msg8/(</soco8/)-g8/]g well yes
+16:24 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g Thank you very much;
+16:24 8/[g4/msg8/(</soco8/)-g8/]g i take it, you've never compiled a kernel before
+16:25 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g as a matter of fact, i did it several times.
+16:25 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g But it was, well, 3 or 4 years ago.
+16:26 8/[g4/msg8/(</soco8/)-g8/]g ok
+16:26 8/[g4/msg8/(</soco8/)-g8/]g you are going to do it in debian?
+16:26 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g I was looking for a "dirty & quick guide" to upgrade the kernel.
+16:26 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g Well, I use linux since kernel 1.0.??
+16:26 8/[g4/msg8/(</soco8/)-g8/]g ok
+16:27 8/[g4/msg8/(</soco8/)-g8/]g you are going to do it in debian?
+16:27 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g yep
+16:27 8/[g4/msg8/(</soco8/)-g8/]g http://newbiedoc.sourceforge.net/system/kernel-pkg.en.html
+16:27 8/[g4/msg8/(</soco8/)-g8/]g check that out...
+16:27 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g And I never stuck to a single distro.
+16:27 8/[g4/msg8/(</soco8/)-g8/]g me neither
+16:28 8/[g4/msg8/(</soco8/)-g8/]g i use slack + freebsd
+16:28 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g But I'll only use debian from now on.
+16:28 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g (ideology)
+16:28 8/[g4/msg8/(</soco8/)-g8/]g and eeven openbsd
+16:28 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g well,
+16:28 8/[g4/msg8/(</soco8/)-g8/]g but mostly deb + free
+16:28 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g I use openbsd too, for a gateway+firewall box
+16:29 8/[g4/msg8/(</soco8/)-g8/]g i just like linux/unix
+16:29 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g but my preferred OS will be debian
+16:29 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g Yep.
+16:29 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g I'm a unix geek also.
+16:29 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g but I reall like the debian philosofy.
+16:29 8/[g4/msg8/(</soco8/)-g8/]g although, i still away of nonesense dists 
+16:29 8/[g4/msg8/(</soco8/)-g8/]g me too
+16:30 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g When I first installed OpenBSD, I felt in love.
+16:30 8/[g4/msg8/(</soco8/)-g8/]g i like that *originals*
+16:30 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g (fell?)
+16:30 8/[g4/msg8/(</soco8/)-g8/]g i even like rh6.2
+16:31 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g But I dont like the idea of having to pay for BSD.
+16:31 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g (openBSD, I mean)
+16:31 8/[g4/msg8/(</soco8/)-g8/]g having to pay???
+16:32 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g Well, you can download the packages
+16:32 8/[g4/msg8/(</soco8/)-g8/]g i downloaded the *iso
+16:32 8/[g4/msg8/(</soco8/)-g8/]g ver 3.0
+16:32 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g Where?
+16:32 8/[g4/msg8/(</soco8/)-g8/]g wait
+16:32 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g I was looking after the iso...
+16:33 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g but everywhere I read that "The ISO images are copyrighted..."
+16:33 8/[g4/msg8/(</soco8/)-g8/]g http://darkstar.ist.utl.pt/openbsd/3.0/
+16:33 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g Very good indeed!
+16:33 8/[g4/msg8/(</soco8/)-g8/]g google
+16:34 8/[g4/msg8/(</soco8/)-g8/]g openbsd 3.0 iso, that was all
+16:34 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g well, it gave me nothing
+16:35 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g Yep! The files are there!
+16:37 8/[g</soco8/(4/~soco@200-158-171-57.dsl.telesp.net.br8/)g8/]g Ok, is the Kernel HOWTO you told me a Debian Specific doc, or is the Plain Kernel Howto?
+16:44 8/[g4/msg8/(</soco8/)-g8/]g that is deb specific, yeah
+16:49 #unixlatino: 8/<g >/fexg8/>g eslocate: eso es un dialup de verizon?
+17:12 #linuxlatino: 8/<g@>/Stong8/>g eslocate: wazaaaaaaaaaaaaa
+--- Log opened Sun Jan 13 17:45:18 2002
+17:48 #linuxlatino: 8/<g >/DarkSou|-g8/>g eslocate
+17:52 #debian: 8/<g >/ugly_g8/>g eslocate: specify the resolution you want in /etc/X11/XF86Config-4
+17:52 #debian: 8/<g >/ugly_g8/>g eslocate: for the depth you're using
+17:52 #debian: 8/<g >/Peakerg8/>g eslocate: edit /etc/X11/XF86Config-4 (or without -4) and don't specify support for resolutions larger than you use. the largest is used to set the desktop size
+17:59 #linux: 8/<g@>/Lion-Og8/>g eslocate: reconfigureit
+18:00 #linux: 8/<g@>/Lion-Og8/>g eslocate: do it properly
+18:01 #linux: 8/<g@>/Lion-Og8/>g eslocate: and how do you expect me to know that ?  what have you tried so far?
+18:02 #linux: 8/<g@>/Lion-Og8/>g eslocate: not exactly the way to do it. RTFM, try again.
+18:02 #linux: 8/<g@>/Lion-Og8/>g eslocate: I'm not.
+18:02 #linux: 8/<g@>/Lion-Og8/>g eslocate: since this isn't an help channel and I'm in no mood to tell people the obvious...
+18:02 #linux: 8/<g@>/Lion-Og8/>g eslocate: if you're too lazy to even read the X manual, thats your problem; not mine.
+18:06 #debian: 8/<g >/karbonlipheg8/>g eslocate it only is that way if you change resolution *in* the thingy
+18:06 #debian: 8/<g >/Peakerg8/>g eslocate: get rid of larger desktop resolution definitions in your x config file
+18:06 #debian: 8/<g >/karbonlipheg8/>g eslocate it only is that way if you change resolution *in* the xf4
+18:06 #debian: 8/<g >/T_VoiDg8/>g eslocate: it will always have the size of the largest possible you set. if you want to disable that, dpkg-reconfigure and drop that higher resolution you chose
+18:07 #debian: 8/<g >/T_VoiDg8/>g eslocate: you can call that a "xfree86 limitation (if not x11)"
+18:09 #debian: 8/<g >/karbonlipheg8/>g eslocate: i dont know. I am quite new to ebian.
+--- Log opened Sun Jan 13 18:28:55 2002
+--- Day changed Mon Jan 14 2002
+00:27 #linuxlatino: 8/<g >/E0xg8/>g eslocate ?
+00:28 #linuxlatino: 8/<g >/E0xg8/>g eslocate q me dicias ?
+00:29 #linuxlatino: 8/<g >/E0xg8/>g eslocate yo no lo pasteo
+00:29 #linuxlatino: 8/<g >/E0xg8/>g eslocate es solo el scritp que lo hace
+00:36 #debian: 8/<g >/Speulerg8/>g eslocate: thanks. i tend to confuse  menuconfig and configmenu
+01:36 #linuxlatino: 8/<g >/E0xg8/>g eslocate
+01:36 #linuxlatino: 8/<g >/E0xg8/>g eslocate ollete
+01:37 #linuxlatino: 8/<g >/E0xg8/>g eslocate si tengo en mi regla esto add deny ip from any to any
+02:06 #linuxlatino: 8/<g >/t00R_g8/>g eslocate: tiene una pagina....
+02:07 #linuxlatino: 8/<g >/Le0_g8/>g eslocate es un viejon?  :)
+02:09 #linuxlatino: 8/<g >/t00R_g8/>g eslocate: cuantos anios tenes ?
+02:10 #linuxlatino: 8/<g >/Le0_g8/>g eslocate : arriba de los 40?
+--- Log opened Mon Jan 14 03:24:31 2002
+05:07 #linuxlatino: 8/<g >/warpiccg8/>g eslocate 
+--- Log closed Mon Jan 14 11:44:05 2002
+--- Log opened Tue Jan 15 00:38:09 2002
+00:38 8/[g4/msg8/(</slocate8/)-g8/]g h
+00:38 8/[g</slocate8/(4/quico@pool-162-83-236-24.ny5030.east.verizon.net8/)g8/]g h
+00:38 8/[g4/msg8/(</slocate8/)-g8/]g h
+00:38 8/[g</slocate8/(4/quico@pool-162-83-236-24.ny5030.east.verizon.net8/)g8/]g h
+00:38 8/[g4/msg8/(</E0x8/)-g8/]g guey
+00:39 8/[g4/msg8/(</E0x8/)-g8/]g eto tiro un quit msg cuando sali?
+00:41 8/[g</E0x8/(4/moya@66.98.74.2178/)g8/]g el qeu ?
+00:42 8/[g4/msg8/(</E0x8/)-g8/]g el irssi
+00:42 8/[g</E0x8/(4/moya@66.98.74.2178/)g8/]g Quits: slocate (quico@162.83.236.24) (Lost terminal)
+00:42 8/[g4/msg8/(</E0x8/)-g8/]g eso dijo?
+00:43 8/[g</E0x8/(4/moya@66.98.74.2178/)g8/]g si
+01:37 #irssi: 8/<g >/vilmundg8/>g eslocate: I get an error when trying to run dns.pl
+01:45 #irssi: 8/<g >/vilmundg8/>g eslocate: can I try to dcc you?
+01:48 #irssi: 8/<g >/vilmundg8/>g eslocate  would you please dcc me something?
+02:02 #debian: 8/<g >/kalthareg8/>g eslocate: added some lines to /etc/ledcontrol.conf
+02:04 #debian: 8/<g >/kalthareg8/>g eslocate: apt-get install ledcontrol
+02:13 #irssi: 8/<g >/logix-g8/>g eslocate: i don't use quitmsg.pl
+02:20 #irssi: 8/<g@>/flakg8/>g eslocate: every quit message on its own line?
+--- Log closed Tue Jan 15 02:44:22 2002
+--- Log opened Tue Jan 15 11:57:41 2002
+--- Log closed Tue Jan 15 15:42:27 2002
+--- Log opened Tue Jan 15 19:33:12 2002
+--- Log closed Tue Jan 15 22:27:22 2002
+--- Log opened Thu Jan 17 09:21:36 2002
+09:27 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate estas
+09:37 8/[g4/msg8/(</kari8/)-g8/]g hola chica
+09:37 8/[g</kari8/(4/~karina@edmund.cs.andrews.edu8/)g8/]g hola
+09:38 8/[g4/msg8/(</kari8/)-g8/]g como estas?
+09:41 8/[g4/msg8/(</kari8/)-g8/]g bueno espero que bien...
+09:41 8/[g4/msg8/(</kari8/)-g8/]g ciao
+09:42 8/[g</kari8/(4/~karina@edmund.cs.andrews.edu8/)g8/]g bien
+09:42 8/[g</kari8/(4/~karina@edmund.cs.andrews.edu8/)g8/]g besos, chau
+09:42 8/[g4/msg8/(</kari8/)-g8/]g oye
+--- Log closed Thu Jan 17 09:42:39 2002
+--- Log opened Thu Jan 17 09:45:14 2002
+--- Log closed Thu Jan 17 13:36:19 2002
+--- Log opened Sat Jan 19 20:32:17 2002
+21:20 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g sucio k lo k!
+22:14 8/[g4/msg8/(</Murc-Doc8/)-g8/]g guey?
+23:01 #debian: 8/<g >/caphusog8/>g eslocate: anything new and better in the CVS version?
+23:01 #debian: 8/<g >/kawfeeg8/>g eslocate: how are you more secure than locate?
+23:02 #debian: 8/<g >/kawfeeg8/>g eslocate: haha
+23:14 8/[g</fex8/(4/~fex@FELIXALCALA.COM8/)g8/]g me puedes prestar tu cservice username para registrar #unixlatino?
+23:14 8/[g4/msg8/(</fex8/)-g8/]g slocate
+23:14 8/[g</fex8/(4/~fex@FELIXALCALA.COM8/)g8/]g gracias
+23:14 8/[g4/msg8/(</fex8/)-g8/]g np
+23:16 8/[g4/msg8/(</Mafia-PHP8/)-g8/]g excusame el abuso de confianza de dia
+23:17 8/[g</Mafia-PHP8/(4/mafia@206.128.113.1028/)g8/]g no hay problema.. todos puteamos y nos pasamos
+23:17 8/[g4/msg8/(</Mafia-PHP8/)-g8/]g jjiji
+23:25 #debian: 8/<g >/zxcvg8/>g eslocate: i start up xawtv
+23:26 #debian: 8/<g >/zxcvg8/>g eslocate: the one off the drivers page, i searched freshmaet.net for it
+23:27 #debian: 8/<g >/zxcvg8/>g eslocate: did you use the one in cvs?
+23:29 #debian: 8/<g >/zxcvg8/>g eslocate, that's my dmesg output: http://142.179.45.124/dmesg.txt
+23:33 #debian: 8/<g >/zxcvg8/>g eslocate: no, as modules
+23:40 #obsd: 8/<g >/E0xg8/>g eslocate
+23:48 #debian: 8/<g >/zxcvg8/>g eslocate: i think it was xawtv causing the problem
+23:49 #debian: 8/<g >/zxcvg8/>g eslocate: i tried camstream, but it's like SO slow, it updates every 3 secs or so
+23:56 #linuxlatino: 8/<g@>/nelsongg8/>g eslocate: llegaste a un punto ahi.
+23:58 #debian: 8/<g >/zxcvg8/>g eslocate: yeah, i get that
+--- Day changed Sun Jan 20 2002
+00:10 8/[g4/msg8/(</Murc-Doc8/)-g8/]g dime mano
+00:10 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g mano!
+00:10 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g aki apunto de irme a ZzzZ k toy
+00:10 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g y usted en k ta
+00:10 8/[g4/msg8/(</Murc-Doc8/)-g8/]g en lo mimo
+00:10 8/[g4/msg8/(</Murc-Doc8/)-g8/]g y deb como le trato?
+00:11 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g yo no le e hecho na todavia a eso!
+00:11 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g lo e dejao ahi trankilo!
+00:11 8/[g4/msg8/(</Murc-Doc8/)-g8/]g y en que ha tao ud?
+00:12 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g yo estudiano y jugando! y hablando por el telefono con una carajita k me tiene loco ya!
+00:12 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g jeje
+00:12 8/[g4/msg8/(</Murc-Doc8/)-g8/]g ah bueno, si es en eso ta to
+00:12 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g y usted y la camara k a hecho raro con ella!
+00:12 8/[g4/msg8/(</Murc-Doc8/)-g8/]g no, nah ya acabe con ella
+00:13 8/[g4/msg8/(</Murc-Doc8/)-g8/]g era pa ve que se podia
+00:13 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g a coño!
+00:13 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g ok!
+00:13 8/[g4/msg8/(</Murc-Doc8/)-g8/]g me mandan la mia al otro dia
+00:14 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g a bueno!
+00:14 8/[g4/msg8/(</Murc-Doc8/)-g8/]g pongase la pila con debian
+00:14 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g loco verdad donde e k ba hacer la conferencia esa de linux!
+00:14 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g si es k usted tiene plane de ir palla todavia!
+00:14 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g eso ba!
+00:14 8/[g4/msg8/(</Murc-Doc8/)-g8/]g en el jacon javits center (42nd st)
+00:15 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g eso es en manhattan! po tato
+00:15 8/[g4/msg8/(</Murc-Doc8/)-g8/]g claro
+00:15 8/[g4/msg8/(</Murc-Doc8/)-g8/]g si es que no estoy trabajando de aqui alla
+00:15 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g potato loco no vemo ahorita voy a ZzzZ!
+00:15 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g ya usted sabe peace!
+00:15 8/[g4/msg8/(</Murc-Doc8/)-g8/]g vayase 
+00:15 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g ohh
+00:15 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g y donde ba a trabajar!
+00:15 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g ?
+00:16 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g no me hecha perra!!!!!
+00:16 8/[g4/msg8/(</Murc-Doc8/)-g8/]g con una co que le monitorea los sys a wallstreet
+00:16 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g no entendi ni na
+00:16 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g a ya cai
+00:16 8/[g4/msg8/(</Murc-Doc8/)-g8/]g como operador de unix
+00:16 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g opk
+00:16 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g ok
+00:16 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g compania!
+00:17 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g ejejjej!
+00:17 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g apo el ta potente
+00:17 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g y ahi mony ahi?
+00:17 8/[g4/msg8/(</Murc-Doc8/)-g8/]g el jueves me dicen
+00:17 8/[g4/msg8/(</Murc-Doc8/)-g8/]g oh!
+00:17 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g digo yo por k esa jente tienen cuarto!
+00:17 8/[g4/msg8/(</Murc-Doc8/)-g8/]g si
+00:17 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-83-237.ny5030.east.verizon.net8/)g8/]g bueno po tato no chekiamo ahorita!
+00:18 8/[g4/msg8/(</Murc-Doc8/)-g8/]g ok
+00:19 #linuxlatino: 8/<g+>/E0xg8/>g eslocate amja !
+00:19 #linuxlatino: 8/<g+>/E0xg8/>g eslocate instalale de los port y tan bien con portupgrade
+00:21 #linuxlatino: 8/<g+>/E0xg8/>g eslocate instale de los ports el XFree86-4.1_10 y luego cuando hice el portupgrade -a me actulizo a XFree86-4.1_12
+00:22 #linuxlatino: 8/<g@>/Zupg8/>g eslocate ;_)
+00:25 #linuxlatino: 8/<g@>/Zupg8/>g eslocate no saluda usted..
+00:28 #linuxlatino: 8/<g@>/Zupg8/>g esprite , me estrania arania que por ser tan mosca no me conoscas...
+01:30 8/[g4/msg8/(</VERDE8/)-g8/]g id openbsd
+01:30 8/[g</VERDE8/(4/~znf@211.96.31.2508/)g8/]g You have been identified. You can unident yourself with unident, set a perm ident mask with permident and remove chan ident alert with silent.
+--- Log opened Sun Jan 20 18:51:36 2002
+--- Log opened Tue Jan 22 13:34:39 2002
+--- Log closed Tue Jan 22 15:57:43 2002
+--- Log opened Wed Jan 23 16:53:18 2002
+21:25 #linuxlatino: 8/<g >/VERT|GOg8/>g eslocate
+--- Log closed Wed Jan 23 21:34:13 2002
+--- Log opened Thu Jan 24 17:32:38 2002
+--- Log closed Thu Jan 24 22:39:28 2002
+--- Log opened Fri Jan 25 17:27:57 2002
+17:28 8/[g4/msg8/(</slocate8/)-g8/]g hey
+17:28 8/[g</slocate8/(4/quico@pool-162-83-235-183.ny5030.east.verizon.net8/)g8/]g hey
+17:31 8/[g4/msg8/(</Ston8/)-g8/]g wassup bitchX
+17:31 8/[g4/msg8/(</Ston8/)-g8/]g http://hlabs1c2.2y.net:32768/#
+17:32 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g aqui que acabo de levantar mi dialup server :D
+17:32 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g pass y demas ?
+17:33 8/[g4/msg8/(</Ston8/)-g8/]g ston:ston
+17:33 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g que organizar mi cuarto antes del domingo :(
+17:34 8/[g4/msg8/(</Ston8/)-g8/]g quien va
+17:34 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g loco mandame un pinguino de esos por correo :(
+17:34 8/[g4/msg8/(</Ston8/)-g8/]g jiji
+17:34 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g UNA SOMBRINA EN EL FONDO :D
+17:34 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g sombrilla :X
+17:34 8/[g4/msg8/(</Ston8/)-g8/]g si consigo en el linux expo te lo mando
+17:34 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g =)~
+17:35 8/[g4/msg8/(</Ston8/)-g8/]g deja ver yo tengo otro por ahi
+17:35 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g ok =))))))))))))))))))))))))))))))))))))
+17:35 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g monte un dialup server en mi laptop jejejeje
+17:36 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g tengo que hacer una doc ahora para una amiga =)~
+17:39 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g =)
+17:41 8/[g4/msg8/(</Ston8/)-g8/]g dejame irme a clases
+17:41 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g ok yo voy arreglar mi room
+17:41 8/[g4/msg8/(</Ston8/)-g8/]g mandame el howto de base de datos
+17:42 8/[g4/msg8/(</Ston8/)-g8/]g a ver que organizo
+17:42 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g jua
+17:42 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g eso fue una aplicacion no un howto
+17:42 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g =p
+17:42 8/[g4/msg8/(</Ston8/)-g8/]g como asi?
+17:42 8/[g4/msg8/(</Ston8/)-g8/]g no fue mysql + php?
+17:43 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g hice una base de datos y tres paginas en php para eso =) mas un .pl para sacar los mp3 de las carpetas
+17:43 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g si.. pero no es un howto es una micro aplicacion!
+17:43 8/[g4/msg8/(</Ston8/)-g8/]g ok
+17:43 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g voy hacer uno para ppp server en linux :)
+17:43 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g ese si te lo puedo pasar!
+17:44 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g me tomara un tiempo leer cada opcion del pppd pero na!!! de aqui a las 11pm lo termino (creo)
+17:44 8/[g4/msg8/(</Ston8/)-g8/]g manda las *php y el *pl entonces pa i leyendo
+17:45 8/[g</Ston8/(4/~ston@ipcodetel-113-d1.codetel.net.do8/)g8/]g ahorita!
+17:45 8/[g4/msg8/(</Ston8/)-g8/]g a quico@spec.net
+17:45 8/[g4/msg8/(</Ston8/)-g8/]g ciao
+--- Log closed Fri Jan 25 21:56:57 2002
+--- Log opened Fri Jan 25 23:53:42 2002
+23:58 #linuxlatino: 8/<g >/Guardian`g8/>g eslocate
+23:59 8/[g</fex8/(4/~fex@FELIXALCALA.COM8/)g8/]g /msg X@channels.undernet.org support #unixlatino YES
+23:59 8/[g4/msg8/(</fex8/)-g8/]g ya lo hice mano
+23:59 8/[g4/msg8/(</fex8/)-g8/]g cuanta vece es?
+--- Day changed Sat Jan 26 2002
+00:02 #linuxlatino: 8/<g >/Guardian`g8/>g eslocate
+00:03 8/[g</fex8/(4/~fex@FELIXALCALA.COM8/)g8/]g tuve que registrarlo otra ves
+00:03 8/[g</fex8/(4/~fex@FELIXALCALA.COM8/)g8/]g la gente no hace el commando y me lo reject
+00:03 8/[g4/msg8/(</fex8/)-g8/]g ok
+00:04 8/[g4/msg8/(</X@channels.undernet.org8/)-g8/]g login slocate freebsd
+00:04 8/[g4/msg8/(</X8/)-g8/]g support #unixlatino YES
+00:07 8/[g4/msg8/(</VERTIGO8/)-g8/]g no lo veo
+00:09 #linuxlatino: 8/<g >/Guardian`g8/>g eslocate yo aki tan tande ta raro
+00:22 #linuxlatino: 8/<g >/Guardian`g8/>g eslocate tengo un problema en freeBSD
+00:31 8/[g4/msg8/(</VERTIGO8/)-g8/]g oh!
+00:37 8/[g4/msg8/(</Guardian`8/)-g8/]g y entonce
+00:37 8/[g</Guardian`8/(4/~vertigo@207.33.56.1038/)g8/]g pera deja ver
+00:38 8/[g4/msg8/(</Guardian`8/)-g8/]g [12:38] [Undernet] DCC can't connect to 207.33.56.103 port 1369
+--- Log closed Sat Jan 26 00:40:43 2002
+--- Log opened Sat Jan 26 09:45:59 2002
+11:56 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-183-177.ny5030.east.verizon.net8/)g8/]g muchacho k es eso
+11:56 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-183-177.ny5030.east.verizon.net8/)g8/]g ?
+11:56 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-183-177.ny5030.east.verizon.net8/)g8/]g yo le di y me salio un error!
+12:54 8/[g4/msg8/(</Murc-Doc8/)-g8/]g halo
+12:55 8/[g4/msg8/(</Murc-Doc8/)-g8/]g pero claro si tu ta en la mierda esa de xp
+--- Log closed Sat Jan 26 12:55:37 2002
+--- Log opened Sat Jan 26 16:40:09 2002
+20:03 8/[g</Luciano198/(4/~Luciano19@200.47.45.1968/)g8/]g hola, te puedo hacer una pregunta?
+20:20 #linuxlatino: 8/<g >/E0xg8/>g eslocate shhhhhhhhh
+20:20 #linuxlatino: 8/<g >/E0xg8/>g eslocate el progeny esta basado en woody
+20:21 #linuxlatino: 8/<g >/E0xg8/>g eslocate eso mismo que haga silencio
+21:19 #linuxlatino: 8/<g >/E0xg8/>g eslocate dime ?
+21:19 #linuxlatino: 8/<g >/E0xg8/>g eslocate es jevi ese gaim ?
+21:24 #linuxlatino: 8/<g >/E0xg8/>g eslocate va de hay saque uno
+21:24 #linuxlatino: 8/<g >/E0xg8/>g eslocate ahh mi email dices
+21:25 #linuxlatino: 8/<g >/E0xg8/>g eslocate e0x22@hotmail.com
+21:40 #linuxlatino: 8/<g >/E0xg8/>g eslocate !
+21:40 #linuxlatino: 8/<g >/E0xg8/>g eslocate puesi yo pude poner icq en babber
+21:40 #linuxlatino: 8/<g >/E0xg8/>g eslocate puesi yo pude poner icq en gabber
+21:41 #linuxlatino: 8/<g >/E0xg8/>g eslocate msn 
+22:57 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g sucio!
+23:01 8/[g4/msg8/(</Murc-Doc8/)-g8/]g sucia
+23:34 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g k lo k
+23:34 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ready to go for the conferencia!?
+23:34 8/[g4/msg8/(</Murc-Doc8/)-g8/]g yes
+23:35 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ahh donde e k e k siempre seme olvida?
+23:35 8/[g4/msg8/(</Murc-Doc8/)-g8/]g en la 42
+23:36 8/[g4/msg8/(</Murc-Doc8/)-g8/]g en la 42
+23:40 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g pero en donde de gracia no la calle!?
+23:42 8/[g4/msg8/(</Murc-Doc8/)-g8/]g en el jacobs javits cnter
+23:42 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g tato
+23:47 8/[g4/msg8/(</mam27328/)-g8/]g http://hlabs1c2.2y.net:32768/#
+--- Day changed Sun Jan 27 2002
+00:04 8/[g4/msg8/(</Murc-Doc8/)-g8/]g oye
+00:05 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g e
+00:05 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ?
+00:05 8/[g4/msg8/(</Murc-Doc8/)-g8/]g son $20 pa entra 
+00:06 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ahora son 20 la creta no eran 10?
+00:06 8/[g4/msg8/(</Murc-Doc8/)-g8/]g conho si pero ante de dec 27
+00:06 8/[g4/msg8/(</Murc-Doc8/)-g8/]g http://www.linuxworldexpo.com/reg/attendee/sub_pages/sub4.shtml
+00:07 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g anda er diablo!
+00:22 8/[g4/msg8/(</Murc-Doc8/)-g8/]g que vamo a hace?
+00:23 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g yo voy
+00:23 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g yo no se usted!
+00:24 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ejej
+00:24 8/[g4/msg8/(</Murc-Doc8/)-g8/]g jsjsjsj
+00:27 8/[g4/msg8/(</Murc-Doc8/)-g8/]g yo te iba a compra uno aqui pero nama me deja compra uno
+00:28 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g como asi?
+00:28 8/[g4/msg8/(</Murc-Doc8/)-g8/]g por el internet
+00:29 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g como k nama te dejan compra uno loco del diañe?
+00:29 8/[g4/msg8/(</Murc-Doc8/)-g8/]g yo puse 2 y nama me dio uno
+00:29 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g k loco!
+00:29 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g po agarra y desconectate y sube de nuevo k yo le doy lo 20 peso cuando vallemo pa lla!
+00:32 8/[g4/msg8/(</Murc-Doc8/)-g8/]g nombre y apellido?
+00:32 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g hoolle k ratreto!
+00:32 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g nelson perez
+00:32 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g no te sabia tu eso?
+00:33 8/[g4/msg8/(</Murc-Doc8/)-g8/]g zipcode?
+00:33 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g 10456
+00:36 8/[g4/msg8/(</Murc-Doc8/)-g8/]g ya
+00:36 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g diablo pero ahi conferencia carita ahi loco
+00:36 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ?
+00:36 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g y cuando llega esa cosa loco?
+00:37 8/[g4/msg8/(</Murc-Doc8/)-g8/]g no lo dan alla
+00:37 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g a bueno!
+00:37 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g y cual tu comprate
+00:37 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ?
+00:38 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g osea k lo tique eso no se pueden comprar halla oco?
+00:38 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g loco*
+00:38 8/[g4/msg8/(</Murc-Doc8/)-g8/]g la de 3 dia
+00:38 8/[g4/msg8/(</Murc-Doc8/)-g8/]g no
+00:39 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g cual de 3 dia la k cuesta como 200
+00:39 8/[g4/msg8/(</Murc-Doc8/)-g8/]g dianhe un hombre que se lo mandaban lo ticke a mi
+00:39 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ejejej
+00:39 8/[g4/msg8/(</Murc-Doc8/)-g8/]g no, la de exhibit
+00:39 8/[g4/msg8/(</Murc-Doc8/)-g8/]g abajo
+00:40 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ya vi
+00:40 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g y cual fue de las 3?
+00:40 8/[g4/msg8/(</Murc-Doc8/)-g8/]g pue nah
+00:40 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g y cual usted me compro a mi?
+00:40 8/[g4/msg8/(</Murc-Doc8/)-g8/]g el miercoles
+00:41 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g por k no valla a ser baina k tu por un lao y yo por otro barbaro!
+00:41 8/[g4/msg8/(</Murc-Doc8/)-g8/]g esa mima
+00:41 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ahhhh
+00:41 8/[g4/msg8/(</Murc-Doc8/)-g8/]g no vamo junto perro
+00:41 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ahh a k hora es la cosa esa?
+00:41 8/[g4/msg8/(</Murc-Doc8/)-g8/]g dede que abran
+00:42 8/[g4/msg8/(</Murc-Doc8/)-g8/]g a la 9
+00:43 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g a la nueve e k abre o a la nueve e k bamo a salir
+00:44 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ?
+00:44 8/[g4/msg8/(</Murc-Doc8/)-g8/]g abre
+00:44 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g apo no vamo como a la 8?
+00:44 8/[g4/msg8/(</Murc-Doc8/)-g8/]g ah no ala 10:30
+00:44 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g como k a la 10.30 si abren a la 9?
+00:45 8/[g4/msg8/(</Murc-Doc8/)-g8/]g pero las conferencias
+00:45 8/[g4/msg8/(</Murc-Doc8/)-g8/]g nos vamos a la excibicion es
+00:45 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g osea k nosotro no entramos a las conferencias?
+00:46 8/[g4/msg8/(</Murc-Doc8/)-g8/]g no esas son las de 200 pa alla
+00:46 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g a bueno!
+00:47 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g entonce a la k no sotros bamos a k hora es k comienzan/.?
+00:47 8/[g4/msg8/(</Murc-Doc8/)-g8/]g no vamo ala 9:30
+00:50 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g entonce como e k no bamo hace pa juntano
+00:50 8/[g4/msg8/(</Murc-Doc8/)-g8/]g no juntamo pa coge el A en la 145
+00:50 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g a bueno!
+00:50 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g po tato
+00:51 8/[g4/msg8/(</Murc-Doc8/)-g8/]g hablamo
+00:51 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g pa donde ba?
+00:51 8/[g4/msg8/(</Murc-Doc8/)-g8/]g acotame
+00:51 8/[g4/msg8/(</Murc-Doc8/)-g8/]g a lee un chin de iptables
+00:52 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g ok
+00:52 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g no vemo ahorita
+00:52 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-182-66.ny5030.east.verizon.net8/)g8/]g !
+--- Log closed Sun Jan 27 00:52:35 2002
+--- Log opened Sun Jan 27 01:45:58 2002
+--- Log opened Sun Jan 27 15:37:12 2002
+15:53 8/[g</VERT|GO8/(4/~profetasc@207.33.56.1038/)g8/]g no no funciono
+15:53 #linuxlatino: 8/<g >/VERT|GOg8/>g eslocate
+16:04 #linuxlatino: 8/<g >/E0xg8/>g eslocate !!
+16:04 #obsd: 8/<g >/E0xg8/>g eslocate
+16:04 #obsd: 8/<g >/E0xg8/>g eslocate
+16:30 #linuxlatino: 8/<g >/E0xg8/>g eslocate
+16:30 #linuxlatino: 8/<g >/E0xg8/>g eslocate !!!
+16:40 8/[g</Murc-Doc8/(4/~Slack@151.202.182.668/)g8/]g k lo k lacra!
+16:58 #linuxlatino: 8/<g >/E0xg8/>g eslocate !!!!!!!!!!!!!!!!!!!!!11
+18:01 #linuxlatino: 8/<g >/E0xg8/>g eslocate !!!!!!
+--- Log closed Sun Jan 27 19:48:14 2002
+--- Log opened Sun Jan 27 20:29:53 2002
+20:29 #linuxlatino: 8/<g >/E0xg8/>g eslocate okas
+23:47 #obsd: 8/<g >/E0xg8/>g eslocate !
+23:47 #obsd: 8/<g >/E0xg8/>g eslocate como te fue
+23:48 #obsd: 8/<g >/E0xg8/>g eslocate !
+23:49 #obsd: 8/<g >/E0xg8/>g eslocate aa barbikiu
+23:49 #obsd: 8/<g >/E0xg8/>g eslocate explicame la cosa de irssi
+23:51 #obsd: 8/<g >/E0xg8/>g eslocate cuando abro una simple aterm verdad asi con trasparencia etc ... y pongo irssi se carga el irssi con colores y todo
+23:53 #obsd: 8/<g >/E0xg8/>g eslocate -tr=transparencia -e=ejecutar
+--- Day changed Mon Jan 28 2002
+00:06 #obsd: 8/<g >/E0xg8/>g eslocate !!!!!
+00:10 #obsd: 8/<g >/E0xg8/>g eslocate tan poco
+00:18 #obsd: 8/<g >/E0xg8/>g eslocate por que si cuando hago irssi en una aterm ya abierta se ve vien y tiene las mismas opciones 
+00:31 #obsd: 8/<g >/E0xg8/>g eslocate mira
+00:47 #obsd: 8/<g >/E0xg8/>g eslocate !!
+00:50 #obsd: 8/<g >/E0xg8/>g eslocate !!!!
+00:56 #obsd: 8/<g >/E0xg8/>g eslocate no funciona ya me quilla lo voy a correr asi  !
+00:59 #linux: 8/<g >/Liboltg8/>g eslocate: we have now
+00:59 #obsd: 8/<g >/E0xg8/>g eslocate no verdad que es en el mismo home que va el archivo ese ?
+01:00 #obsd: 8/<g >/E0xg8/>g eslocate asi es que se le hace un link ln -s ?
+--- Log opened Tue Jan 29 10:40:01 2002
+--- Log opened Tue Jan 29 22:16:31 2002
+--- Log closed Tue Jan 29 22:28:48 2002
+--- Log opened Wed Jan 30 08:59:38 2002
+--- Log opened Wed Jan 30 17:36:10 2002
+20:04 8/[g</Murc-Doc8/(4/~Slack@pool-151-202-185-23.ny5030.east.verizon.net8/)g8/]g k lo k ya durmio!
+20:59 8/[g4/msg8/(</Murc-Doc8/)-g8/]g guey!
+--- Log closed Wed Jan 30 21:00:03 2002
+--- Log opened Wed Jan 30 22:23:43 2002
+--- Log opened Thu Jan 31 00:53:09 2002
+00:55 #debian: 8/<g >/caphusog8/>g eslocate: depends
+00:56 #debian: 8/<g >/caphusog8/>g eslocate: lynx, w3m, konqueror, dillo, skipstone, mozilla, netscape, links
+00:57 #debian: 8/<g >/caphusog8/>g eslocate: are all in woody
+01:01 #linuxlatino: 8/<g >/t00R_g8/>g eslocate: estubo lindo ?
+--- Log opened Fri Feb 01 11:40:23 2002
+11:57 8/[g4/msg8/(</Ston8/)-g8/]g se podra manadar un fax por dsl?
+11:58 8/[g</Ston8/(4/~unix@193.251.160.508/)g8/]g npi
+11:58 8/[g</Ston8/(4/~unix@193.251.160.508/)g8/]g con un modem si, mgetty
+11:58 8/[g4/msg8/(</Ston8/)-g8/]g mgetty?
+11:58 8/[g4/msg8/(</Ston8/)-g8/]g es un prog?
+11:59 8/[g</Ston8/(4/~unix@193.251.160.508/)g8/]g no, es un coso para manejar el devices 
+11:59 8/[g</Ston8/(4/~unix@193.251.160.508/)g8/]g de los serial
+12:00 8/[g4/msg8/(</Ston8/)-g8/]g ok
+--- Log opened Sun Feb 03 15:19:40 2002
+15:51 8/[g</[freedom]8/(4/~freedom@192.100.172.1608/)g8/]g wenas
+15:51 8/[g</[freedom]8/(4/~freedom@192.100.172.1608/)g8/]g para rh?
+16:15 8/[g</bJjK_X8/(4/bJjK_X@206.128.113.758/)g8/]g hola que haces?
+16:20 8/[g4/msg8/(</bJjK_X8/)-g8/]g hola quien eres?
+16:20 8/[g</bJjK_X8/(4/bJjK_X@206.128.113.758/)g8/]g hola, necesito ayuda con un modem... podras ayudarme?
+16:21 8/[g4/msg8/(</bJjK_X8/)-g8/]g no te conozco, *no* me mandes msg
+16:21 8/[g</bJjK_X8/(4/bJjK_X@206.128.113.758/)g8/]g ok disculpame, solo necesitaba ayuda
+16:52 #linuxlatino: 8/<g >/Blopag8/>g eslocate ;-)
+17:07 8/[g</bJjK_X8/(4/bJjK_X@206.128.113.758/)g8/]g alguien puede ayudarme con HSP56 micromodem pctel¡???
+17:15 8/[g</JulioCesa8/(4/sjdks@200.48.12.1848/)g8/]g Hola un favor?
+17:15 8/[g</JulioCesa8/(4/sjdks@200.48.12.1848/)g8/]g ¿me ayudas con algo de redes microsoft?
+18:39 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-82-114.ny5030.east.verizon.net8/)g8/]g loca! tas ahi?
+18:42 8/[g</ph008/(4/~ignacio@37stb7.codetel.net.do8/)g8/]g slocatico 
+19:46 #linuxlatino: 8/<g >/E0xg8/>g eslocate !
+20:17 #linuxlatino: 8/<g >/Facu17g8/>g eslocate: estas?
+21:08 #linuxlatino: 8/<g >/debUgo-g8/>g eslocate: que si trabajo? sip, yo me mantengo solito
+21:09 #linuxlatino: 8/<g >/debUgo-g8/>g eslocate mentiroso, el i810 está soportado
+21:09 #linuxlatino: 8/<g >/debUgo-g8/>g eslocate: en una empresa de software (cerrado y para Windows)
+21:09 #linuxlatino: 8/<g >/^E|_SagA^g8/>g eslocate la e subido anteriormente :( 
+21:10 #linuxlatino: 8/<g >/debUgo-g8/>g eslocate: tu controlador IDE es un dispositivo integrado, o no?
+21:10 #linuxlatino: 8/<g >/debUgo-g8/>g eslocate: puede que no tooooooodo el hardware integrado este soportado, pero si buena parte
+21:11 #linuxlatino: 8/<g >/debUgo-g8/>g eslocate: depende del chip
+21:15 #linuxlatino: 8/<g >/XslackXg8/>g eslocate: usas 2.2?
+21:18 #linuxlatino: 8/<g >/debUgo-g8/>g eslocate: y que tal?
+22:50 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-82-114.ny5030.east.verizon.net8/)g8/]g tas ahi ?
+22:50 8/[g4/msg8/(</Murc-Doc8/)-g8/]g dime
+--- Log closed Sun Feb 03 22:50:33 2002
+--- Log opened Mon Feb 04 13:55:44 2002
+--- Log closed Mon Feb 04 16:22:23 2002
+--- Log opened Mon Feb 04 23:02:00 2002
+23:03 8/[g</ph008/(4/~ignacio@ipcodetel-072-stdr1.codetel.net.do8/)g8/]g bien
+23:13 #linuxlatino: 8/<g >/E0xg8/>g eslocate que diablos es RTFM ?
+23:18 #linuxlatino: 8/<g >/E0xg8/>g eslocate ?
+23:18 #linuxlatino: 8/<g >/E0xg8/>g eslocate que es eso de RTFM ?
+23:18 #linuxlatino: 8/<g >/E0xg8/>g eslocate: un downloader bueno , que haga resumen y todo ?
+23:19 #linuxlatino: 8/<g >/E0xg8/>g eslocate: si quisiera usar windows no te hubiera preguntado
+23:22 #linuxlatino: 8/<g >/E0xg8/>g eslocate mira callate
+23:25 #linuxlatino: 8/<g >/E0xg8/>g eslocate: ya encontre una que usaba en mandrake bueno kmago se llama
+23:26 #linuxlatino: 8/<g >/E0xg8/>g eslocate:  pero funcional
+23:27 #linuxlatino: 8/<g >/E0xg8/>g eslocate lo pruebo con el cd 2 de slackware pero dejame asegurar este qeu ya el kmago lo conosco
+23:32 #linuxlatino: 8/<g >/E0xg8/>g eslocate:  el mio ta en 1.8
+23:33 #linuxlatino: 8/<g >/Facu17g8/>g eslocate: jajajaja n es para mi, me preguntaron si existia
+23:33 #linuxlatino: 8/<g >/E0xg8/>g eslocate:  por lo menos yo solo uso windows para disenio hay es qe busco la moneda y jugar quake eso es lo que tu no quiere enteder !
+23:36 #linuxlatino: 8/<g >/E0xg8/>g eslocate: lo unico que pensaria en windows tando en linux seria el photoshop y LW (si se que gimp hace casi solo casi lo mismo que photoshop pero es incomodicimo ustedes no lo entienden por que no bregan casi con eso)
+23:49 #debian: 8/<g >/smcavoy_g8/>g eslocate: can't say I've tried.
+23:50 #linuxlatino: 8/<g >/E0xg8/>g eslocate: si me  ha resolvido
+23:51 #linuxlatino: 8/<g >/E0xg8/>g eslocate: soy burro asi que es resolvido
+--- Log opened Tue Feb 05 18:24:07 2002
+--- Log closed Tue Feb 05 21:51:37 2002
+--- Log opened Wed Feb 06 01:02:29 2002
+01:18 #debian: 8/<g >/caphusog8/>g eslocate: apt-get source, change the options, build the package, put it on hold
+01:19 #debian: 8/<g >/caphusog8/>g eslocate: insert a 'install it' before putting it on hold :)
+01:20 #debian: 8/<g >/caphusog8/>g eslocate: 'apt-get source' downloads source
+01:23 #debian: 8/<g >/caphusog8/>g eslocate: then add them
+01:35 #debian: 8/<g >/caphusog8/>g eslocate: because you want your version of the package holded and not the one installed before
+01:37 #debian: 8/<g >/caphusog8/>g eslocate: because you want different compile time options?
+01:39 #debian: 8/<g >/caphusog8/>g eslocate: isn't that what you want to do?
+01:41 #debian: 8/<g >/caphusog8/>g eslocate: ah, that is what you mean with "how can I give an option to a package as it was a tar.gz compilation?"...
+01:42 #debian: 8/<g >/caphusog8/>g eslocate: so all you want is to edit a config file
+01:43 #debian: 8/<g >/caphusog8/>g eslocate: fire up your favorite editor (nano?) and add that lines. there absolutely nothing complicated involved
+01:46 #debian: 8/<g >/caphusog8/>g eslocate: then tell me what you want to do
+01:48 #debian: 8/<g >/caphusog8/>g eslocate: please, can you decide if you want to change or compile time option or not?
+01:49 #debian: 8/<g >/caphusog8/>g eslocate: a few minutes ago you said you would doubt that you need compile time options...
+--- Log closed Wed Feb 06 02:04:35 2002
+--- Log opened Wed Feb 06 10:39:43 2002
+10:59 #linuxlatino: 8/<g >/Blopag8/>g eslocate funciona?
+11:01 8/[g</Blopa8/(4/~pab@modemcable179.214-200-24.mtl.mc.videotron.ca8/)g8/]g oye loko ese no soy yo , es solo pa joder
+11:01 8/[g</Blopa8/(4/~pab@modemcable179.214-200-24.mtl.mc.videotron.ca8/)g8/]g ;-)
+11:01 8/[g4/msg8/(</Blopa8/)-g8/]g si como no
+11:01 8/[g</Blopa8/(4/~pab@modemcable179.214-200-24.mtl.mc.videotron.ca8/)g8/]g Away activado:5 Estoy trabajando, (l/on p/off s/off) (1dia18h44m42s)
+11:02 8/[g</Blopa8/(4/~pab@modemcable179.214-200-24.mtl.mc.videotron.ca8/)g8/]g deveras loko ;-)
+11:02 8/[g4/msg8/(</Blopa8/)-g8/]g ya vengo
+--- Log opened Wed Feb 06 11:17:24 2002
+--- Log closed Wed Feb 06 12:34:31 2002
+--- Log opened Wed Feb 06 15:30:04 2002
+15:53 #linuxlatino: 8/<g >/E0xg8/>g eslocate pantalla equivocada
+15:54 #linuxlatino: 8/<g >/E0xg8/>g eslocate dame el ftp de barkely otra vex please
+15:55 #linuxlatino: 8/<g >/E0xg8/>g eslocate damelo loko
+16:01 #linuxlatino: 8/<g >/E0xg8/>g eslocate creo mi Freebsd ta malo
+16:01 #linuxlatino: 8/<g >/E0xg8/>g eslocate aqui toy bajando a 11
+16:02 #linuxlatino: 8/<g >/E0xg8/>g eslocate en freebsd ta lento la connecion y como que se friza
+16:03 #linuxlatino: 8/<g >/E0xg8/>g eslocate pero eso no es porque baje en openbsd con el fw
+16:03 #linuxlatino: 8/<g >/E0xg8/>g eslocate pera fw=firewall ?
+16:03 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g holles
+16:04 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g k lo k
+16:04 8/[g4/msg8/(</Murc-Doc8/)-g8/]g aqui
+16:04 8/[g4/msg8/(</Murc-Doc8/)-g8/]g y ud
+16:04 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g trankilo
+16:04 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g holle uno puede hacer esto
+16:04 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g con linux
+16:04 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g se puede poner una red bajo SUSE linux, en la cual solamente una makina como servidor sin ambiente grafico, y por ejemplo 4 terminales solamente k tenga la disketera y puedan accesar a los programas k posee el servidor
+16:04 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g [@CrashDmx] salvo k las terminales tienen su tarjeta de red
+16:04 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g [@CrashDmx] averigua eso mmg
+16:04 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g ??
+16:04 #linuxlatino: 8/<g >/E0xg8/>g eslocate es que he instaldo muchas cosas y borre todo solo deje el sistema base una vex y comenze a instalar todo chin a chin depues !
+16:05 8/[g4/msg8/(</Murc-Doc8/)-g8/]g pero nah, si se conecta, ta to
+16:05 #linuxlatino: 8/<g >/E0xg8/>g eslocate [mira esta pagina que cool no se si te gustan el desenio pero esta pagina hay que verla (esta nas guena que el diablo quien la hiso ) ]
+16:05 8/[g4/msg8/(</Murc-Doc8/)-g8/]g ecusame :p
+16:05 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g como e el asunto!
+16:05 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g el ta loco
+16:05 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g ya me ta escribiendo cosa rara ami!
+16:05 #linuxlatino: 8/<g >/E0xg8/>g eslocate voy a bajar el 4.5 y reinstalarlo el freebsd
+16:06 #linuxlatino: 8/<g >/E0xg8/>g eslocate cuando compre el disco nuevo
+16:06 #linuxlatino: 8/<g >/E0xg8/>g eslocate bueno hablamo lokon o si no llego tarde
+16:06 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g respondeme tu eso!
+16:06 8/[g4/msg8/(</Murc-Doc8/)-g8/]g si se puede, con nfs
+16:06 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g y las otras makina solo teniendo disketera
+16:06 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g sin disco duro
+16:07 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g pueden entrar y emular los pogramas del server
+16:07 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g osea los graficos
+16:07 8/[g4/msg8/(</Murc-Doc8/)-g8/]g eso no se llama emular
+16:07 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g bueno po ejecutar los programas
+16:07 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g o correrlos
+16:07 8/[g4/msg8/(</Murc-Doc8/)-g8/]g si 
+16:07 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g tatos
+16:07 8/[g4/msg8/(</Murc-Doc8/)-g8/]g eso es llama thn-client
+16:07 8/[g4/msg8/(</Murc-Doc8/)-g8/]g eso es llama thin-client
+16:08 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g tato gracia
+16:08 8/[g4/msg8/(</Murc-Doc8/)-g8/]g ok
+16:08 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g dejame decirle a este name!
+16:08 8/[g4/msg8/(</Murc-Doc8/)-g8/]g donde e jeso
+16:08 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g k nose pake kiere saber eso un hombre k no sabe joder bien con linux todavia!
+16:09 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g y samba no hace eso?
+16:10 8/[g4/msg8/(</Murc-Doc8/)-g8/]g samba es para hacer la vez de un servidor nt/2000
+16:10 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g k es eso diske para hacer la vez?
+16:11 8/[g4/msg8/(</Murc-Doc8/)-g8/]g que maquinas de wins crean que ese es un 
+16:11 8/[g4/msg8/(</Murc-Doc8/)-g8/]g que maquinas de wins crean que ese es un servidor nt
+16:12 8/[g</Murc-Doc8/(4/PhAnATiC@pool-151-202-182-204.ny5030.east.verizon.net8/)g8/]g tatos!
+16:25 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate estas hay 
+16:27 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate que hay man 
+16:28 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate solamente era para saber algo sobre el bbootsect que esta dando un error cada vez que intento compilar el kernel 2.2.19 en una pc
+16:30 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate voy a eso casimente 
+16:30 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate thx anyway
+--- Log closed Wed Feb 06 16:33:43 2002
+--- Log opened Fri Feb 08 05:02:32 2002
+--- Log closed Fri Feb 08 10:06:38 2002
+--- Log opened Fri Feb 08 18:02:18 2002
+--- Log closed Fri Feb 08 18:25:10 2002
+--- Log opened Tue Feb 12 10:56:22 2002
+13:14 #linuxlatino: 8/<g >/L-i-n-u-Xg8/>g eslocate ute puso el topic :=P
+13:14 #linuxlatino: 8/<g >/E0xg8/>g eslocate :P
+13:28 #linuxlatino: 8/<g >/E0xg8/>g eslocate mira este E ta mas o menos http://anti.dissercom.com/fotos/index.php?gallery=enlightenment&image=e_xchat.jpg
+13:33 #linuxlatino: 8/<g >/E0xg8/>g eslocate a ver !!
+13:34 #linuxlatino: 8/<g >/E0xg8/>g eslocate el de geek ?
+13:36 #linuxlatino: 8/<g >/E0xg8/>g eslocate paso de que ?
+13:37 #linuxlatino: 8/<g >/E0xg8/>g eslocate es que uno se pone a pensar
+13:37 #linuxlatino: 8/<g >/E0xg8/>g eslocate mil anios en esto y no se ni papa
+13:38 #linuxlatino: 8/<g >/E0xg8/>g eslocate desde el RH 6.2
+13:39 #linuxlatino: 8/<g >/E0xg8/>g eslocate como 3
+13:39 #linuxlatino: 8/<g >/E0xg8/>g eslocate aunque no continius
+13:40 #linuxlatino: 8/<g >/E0xg8/>g eslocate como que no
+13:40 #linuxlatino: 8/<g >/E0xg8/>g eslocate tira datos
+13:40 #linuxlatino: 8/<g >/E0xg8/>g eslocate 99
+13:42 #linuxlatino: 8/<g >/E0xg8/>g eslocate no eso ta malo
+13:48 #linuxlatino: 8/<g >/E0xg8/>g eslocate el 6.1 no tenia install grafica !
+13:50 #linuxlatino: 8/<g >/E0xg8/>g eslocate si el lo bajo
+--- Log closed Tue Feb 12 14:16:12 2002
+--- Log opened Tue Feb 12 17:08:31 2002
+18:01 8/[g</weoe8/(4/~shjagfkjh@196.3.83.1618/)g8/]g loko
+18:02 8/[g</E0x8/(4/~shjagfkjh@196.3.83.1618/)g8/]g hey
+19:24 8/[g</Murc-Doc8/(4/~ameva@pool-151-202-83-3.ny5030.east.verizon.net8/)g8/]g dime
+19:25 8/[g</Murc-Doc8/(4/~ameva@pool-151-202-83-3.ny5030.east.verizon.net8/)g8/]g tas ahi
+--- Log closed Tue Feb 12 22:33:57 2002
+--- Log opened Thu Feb 14 11:22:07 2002
+--- Log opened Fri Feb 15 01:40:53 2002
+--- Log opened Fri Feb 15 14:02:35 2002
+14:31 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-182-234.ny5030.east.verizon.net8/)g8/]g yo tengo el manual ese de reddes
+14:31 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-182-234.ny5030.east.verizon.net8/)g8/]g no me acordaba k lo havia mando a mi mail
+14:33 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-182-234.ny5030.east.verizon.net8/)g8/]g brb
+--- Log closed Fri Feb 15 15:06:18 2002
+--- Log opened Fri Feb 15 16:26:47 2002
+--- Log closed Fri Feb 15 17:23:37 2002
+--- Log opened Sun Feb 17 15:31:57 2002
+--- Day changed Mon Feb 18 2002
+01:46 #linuxlatino: 8/<g >/E0xg8/>g eslocate tas ?
+02:41 8/[g</Murc-Doc_8/(4/Slackware@dialup-63.210.213.238.Dial1.NewYork1.Level3.net8/)g8/]g dimelox
+--- Log closed Mon Feb 18 06:09:51 2002
+--- Log opened Wed Feb 20 21:19:44 2002
+--- Log closed Wed Feb 20 23:34:22 2002
+--- Log opened Thu Feb 21 00:07:35 2002
+01:25 #linuxlatino: 8/<g >/t00R_g8/>g eslocate =)
+01:31 #linuxlatino: 8/<g >/t00R_g8/>g eslocate: que era al final ?
+--- Log closed Thu Feb 21 01:40:12 2002
+--- Log opened Fri Feb 22 01:38:29 2002
+01:56 8/[g</Murc-Doc8/(4/Default@pool-151-202-185-173.ny5030.east.verizon.net8/)g8/]g viste las 2 paginas slocate
+01:56 8/[g</Murc-Doc8/(4/Default@pool-151-202-185-173.ny5030.east.verizon.net8/)g8/]g ?
+02:00 8/[g4/msg8/(</Murc-Doc8/)-g8/]g que paso?
+--- Log closed Fri Feb 22 02:00:47 2002
+--- Log opened Fri Feb 22 12:33:41 2002
+12:33 #linuxlatino: 8/<g >/E0xg8/>g eslocate: hablasmo
+12:34 #linuxlatino: 8/<g >/VERT|GOg8/>g eslocate: baje el ultimo debian jijijaja
+12:34 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate: dime a v
+12:34 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate:  lo mejor que hay potato y me exucusas ;)
+12:35 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate: har harh ar
+12:35 #linuxlatino: 8/<g >/VERT|GOg8/>g eslocate:  cual usas ?
+12:36 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate: POTATO RULEZ!!!
+12:40 #linuxlatino: 8/<g >/VERT|GOg8/>g eslocate: 
+12:42 #linuxlatino: 8/<g >/Blopag8/>g eslocate 
+--- Log closed Fri Feb 22 12:45:05 2002
+--- Log opened Sun Feb 24 00:15:06 2002
+00:49 #linuxlatino: 8/<g >/E0xg8/>g eslocate: que tal
+00:51 #linuxlatino: 8/<g >/E0xg8/>g eslocate:  aqui hay muchas mujeres yo no hago eso
+00:52 #linuxlatino: 8/<g >/E0xg8/>g eslocate:  ooh ta mala ?
+00:54 #linuxlatino: 8/<g >/t00Rg8/>g eslocate: nope
+09:46 8/[g</Murc-out8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g que lo k
+10:32 #linuxlatino: 8/<g >/Murc-outg8/>g eslocate: 
+11:52 8/[g</Murc-out8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g brb
+12:20 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g tas
+12:20 8/[g4/msg8/(</Murc-Doc8/)-g8/]g dimelo
+12:21 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g loco ve aver si tu entra a la pagina esta!
+12:21 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g por k yo creo k puse el apache bien
+12:21 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g el puerto k tu le cambia no e pa el 1023
+12:21 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g ?
+12:22 8/[g4/msg8/(</Murc-Doc8/)-g8/]g no, al 32768
+12:22 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g usaqrq.dns2go.com
+12:22 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g ve aver si te entra
+12:23 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g te entro
+12:23 8/[g4/msg8/(</Murc-Doc8/)-g8/]g que puerto le pusite
+12:23 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g ?
+12:23 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g el 1023
+12:23 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g entra ami makina por ssh
+12:23 8/[g4/msg8/(</Murc-Doc8/)-g8/]g para?
+12:24 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g y entra a este dir /etc/httpd
+12:24 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g como k para para k me mires el archivo!
+12:24 8/[g4/msg8/(</Murc-Doc8/)-g8/]g tengo que irme
+12:24 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g de configuracion de eso!
+12:24 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g a bueno!
+12:24 8/[g4/msg8/(</Murc-Doc8/)-g8/]g a banhiar
+12:24 8/[g4/msg8/(</Murc-Doc8/)-g8/]g pero lealo mano eso ta claro
+12:25 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g po cuando usted venga ahorita me dice!
+12:25 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g ya yo e cambio eso como 10 vece!
+12:25 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g lo voy a hacer de nuevo aver ahora le voy a poner ese puerto k me dijiste aver!
+12:25 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g vallase a banar
+12:25 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g !
+12:25 8/[g4/msg8/(</Murc-Doc8/)-g8/]g dele un puerto mas alla de 1024 que son los privilegiados
+12:26 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-19.ny5030.east.verizon.net8/)g8/]g ok
+--- Log closed Sun Feb 24 13:17:25 2002
+--- Log opened Sun Feb 24 13:56:57 2002
+14:04 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g men
+14:04 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g ve aver ahora!
+14:04 8/[g4/msg8/(</Murc-Doc8/)-g8/]g reinstalate?
+14:04 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g si
+14:04 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g y reinicie tambien!
+14:05 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g 151.202.184.19
+14:05 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g mi ip
+14:06 8/[g4/msg8/(</Murc-Doc8/)-g8/]g dejeme scanealo
+14:06 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g la jente de verizon cuando el server de ello le da la gana te da la misma ip de nuevo!
+14:06 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g ok
+14:06 8/[g4/msg8/(</Murc-Doc8/)-g8/]g tu ve ahora si
+14:06 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g me an dao la ip 3 vece ya la misma!
+14:06 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g por fue ese maldito del programita k lo setio con el firewall!
+14:06 8/[g4/msg8/(</Murc-Doc8/)-g8/]g dime el passwd
+14:07 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g bampir
+14:09 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g entrate
+14:09 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g ?
+14:09 8/[g4/msg8/(</Murc-Doc8/)-g8/]g si
+14:09 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g ok
+14:09 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g mira aver si la web seve ahora
+14:09 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g http://usaqrq.dns2go.com:32768/
+14:12 8/[g</Murc-Doc8/(4/~Default@151.202.184.198/)g8/]g kita el away tu!
+14:12 8/[g4/msg8/(</Murc-Doc8/)-g8/]g tu setiate donde no era
+--- Log closed Sun Feb 24 14:12:41 2002
+--- Log opened Sun Feb 24 15:10:57 2002
+15:27 #linuxlatino: 8/<g >/Murc-Docg8/>g eslocate:  mandeme el archivo de sonido k usted tiene k dice you got mail
+15:50 #linuxlatino: 8/<g >/eth0g8/>g eslocate 
+15:54 #linuxlatino: 8/<g >/E0xg8/>g eslocate: :P
+15:55 #linuxlatino: 8/<g >/E0xg8/>g eslocate: olle el scritp de irssi del xmms para decir que cancion esta tocando no me sirve !
+15:55 #linuxlatino: 8/<g >/E0xg8/>g eslocate: ah no yo pensaba que estabas en la cosa 
+16:12 #linuxlatino: 8/<g >/eth0g8/>g eslocate 
+17:35 #linuxlatino: 8/<g >/Murc-Docg8/>g eslocate:  men mandeme la carpeta k le di a guardar de mi pagina
+19:56 #linuxlatino: 8/<g >/E0xg8/>g eslocate: !!!!
+20:43 #linuxlatino: 8/<g >/Murc-Docg8/>g eslocate: 
+20:49 #linuxlatino: 8/<g >/eth0g8/>g eslocate 
+--- Log closed Sun Feb 24 21:29:21 2002
+--- Log opened Sun Feb 24 22:10:06 2002
+--- Day changed Mon Feb 25 2002
+00:45 #linuxlatino: 8/<g >/jak2000g8/>g eslocate
+01:29 8/[g</Rojita8/(4/.......@ACB491FB.ipt.aol.com8/)g8/]g sclote
+02:01 8/[g4/msg8/(</Ston8/)-g8/]g rata
+--- Log closed Mon Feb 25 02:35:16 2002
+--- Log opened Fri Mar 01 16:22:39 2002
+--- Log opened Sat Mar 02 16:16:46 2002
+16:48 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-81.ny5030.east.verizon.net8/)g8/]g men
+16:49 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-81.ny5030.east.verizon.net8/)g8/]g cuando uno instala un rpm en donde e k se mete cuando se instala
+16:49 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-81.ny5030.east.verizon.net8/)g8/]g kiero decir donde esta el dir de eso?
+--- Log closed Sat Mar 02 17:26:14 2002
+--- Log opened Sat Mar 02 17:39:45 2002
+18:04 8/[g</eth38/(4/~user@139stb70.codetel.net.do8/)g8/]g estas 
+18:04 8/[g</eth38/(4/~user@139stb70.codetel.net.do8/)g8/]g ?
+--- Log closed Sat Mar 02 18:38:44 2002
+--- Log opened Sat Mar 02 19:16:55 2002
+--- Log closed Sat Mar 02 21:09:12 2002
+--- Log opened Sat Mar 02 22:06:21 2002
+22:07 #linuxlatino: 8/<g >/Murc-Docg8/>g eslocate:  no yo no e reinstalado na!
+22:09 #linuxlatino: 8/<g >/Murc-Docg8/>g eslocate:  con el mismo gkrellm tu lo configuraste k cuando te llega un mail new tu clikea en el mail y tu puedes leer el mail con el programa k tu le pusiste verdad?
+--- Log closed Sat Mar 02 23:33:06 2002
+--- Log opened Sun Mar 03 14:15:27 2002
+16:45 8/[g</zeus2318/(4/~oscar_gyo@148.233.219.2128/)g8/]g 9,1 ÇÝÖá ÔÈßÉ Úáì ÇáÇØáÇÞ 13,15 ÌÑÈ æáä ÊäÓì ÎÏãÇÊäÇ ÇáãÊãíÒÉ 15,6 /server irc.GulfChat.net9,1 äÑÍÈ Èßá ÇáÃÕÏÞÇÁ áãÒíÏ ãä ÇáãÝÇÌÂÊ ÅÖÛØ Úáì Çááæä ÇáÃÍãÑ ãÑÊíä 4,4 www.mirctools.com
+22:11 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-81.ny5030.east.verizon.net8/)g8/]g hoiga!!!
+--- Log opened Mon Mar 04 17:47:34 2002
+--- Log closed Mon Mar 04 20:49:17 2002
+--- Log opened Mon Mar 04 22:23:55 2002
+22:30 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g e k tu no taba ahi
+22:30 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g mira!
+22:31 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g yo tengo k ir a su casa hermano a buscar el cd de WInXP y mi camara pa proba la camara aki en linux!
+22:31 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g slocate
+22:39 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate: estas hay 
+22:55 8/[g4/msg8/(</Murc-Doc8/)-g8/]g halo
+22:57 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g dimelo
+22:57 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g slocate holle!!
+22:57 8/[g4/msg8/(</Murc-Doc8/)-g8/]g cuando quiere eso?
+22:57 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g ?
+22:57 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g usted no para ahi nose! uste e k tiene k poner dia!! por k usted no para en su casa!
+22:58 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g si u te ta en su casa manana yo lo busco manana!
+22:58 8/[g4/msg8/(</Murc-Doc8/)-g8/]g que te digo???
+--- Log closed Mon Mar 04 22:58:19 2002
+--- Log opened Tue Mar 05 12:39:59 2002
+12:40 #linuxlatino: 8/<g >/cmdg8/>g eslocate: OpenBSD brutus 3.0 GENERIC#94 i386
+13:02 #linuxlatino: 8/<g >/Blopag8/>g eslocate  ;)
+--- Log closed Tue Mar 05 13:02:58 2002
+--- Log opened Tue Mar 05 17:34:02 2002
+18:51 #linuxlatino: 8/<g+>/Murc-Docg8/>g eslocate lo hizo pero ese malvao no ta ahi!! ahora pake me mande el manual! o me explique!
+--- Log closed Tue Mar 05 19:50:00 2002
+--- Log opened Tue Mar 05 21:25:27 2002
+21:36 #linuxlatino: 8/<g+>/Murc-Docg8/>g eslocate: mira este cliente de irc http://www.srvx.net/
+21:59 #linuxlatino: 8/<g+>/Murc-Docg8/>g eslocate: ute vio la pagina del cliente de irc k le mande
+22:03 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g *
+22:03 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g  * Include files
+22:03 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g  */
+22:03 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g include "badwords.channel.conf";
+22:03 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g include "badwords.message.conf";
+22:03 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g include "networks/usa.network";
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g /*
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g  * Some modules;
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g */
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g loadmodule "src/modules/commands.so";
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g loadmodule "src/modules/scan.so";
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g loadmodule "src/modules/scan_socks.so";
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g loadmodule "src/modules/scan_http.so";
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g /* Ports */
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g listen *:6667;
+22:04 8/[g4/msg8/(</Murc-Doc8/)-g8/]g que es loco
+22:04 #linuxlatino: 8/<g >/E0xg8/>g eslocate si tengo que llevarselo maniana a las 8:00
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g ups
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g eso no iba aki
+22:04 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g kita el away ese
+--- Log closed Tue Mar 05 22:17:44 2002
+--- Log opened Tue Mar 05 22:43:58 2002
+22:48 8/[g</Ston8/(4/~ston@111stb7.codetel.net.do8/)g8/]g :P
+22:48 8/[g4/msg8/(</Ston8/)-g8/]g la tuya
+22:48 8/[g</Ston8/(4/~ston@111stb7.codetel.net.do8/)g8/]g yo no dice nada ;(
+22:52 8/[g4/msg8/(</Ston8/)-g8/]g ya voy por el cap 7 de Learning Perl 3rd ed.
+22:52 8/[g4/msg8/(</Ston8/)-g8/]g Regular Expressions
+22:53 8/[g</Ston8/(4/~ston@111stb7.codetel.net.do8/)g8/]g =p
+22:53 8/[g4/msg8/(</Ston8/)-g8/]g ;)
+--- Log closed Tue Mar 05 23:20:53 2002
+--- Log opened Wed Mar 06 16:05:34 2002
+16:58 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g brb
+17:25 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g holle tu
+17:25 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g ?
+18:20 8/[g4/msg8/(</Murc-Doc8/)-g8/]g loco
+18:20 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g edime
+18:21 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g areglate la baina
+18:21 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g ?
+18:21 8/[g4/msg8/(</Murc-Doc8/)-g8/]g en el mio no pude
+18:21 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g como ba hacer!
+18:21 8/[g4/msg8/(</Murc-Doc8/)-g8/]g en el tuyo donde es que se hace
+18:21 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g tu entrate a la pagina www.usaqrq.dns2go.com
+18:22 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g ya seve sin el 3000
+18:22 8/[g</Murc-Doc8/(4/~Default@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g kita el away ese
+--- Log closed Wed Mar 06 18:22:20 2002
+--- Log opened Wed Mar 06 23:47:59 2002
+23:51 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate:  dime a v
+23:52 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate: estas dime 
+--- Log closed Wed Mar 06 23:54:29 2002
+--- Log opened Thu Mar 07 00:09:54 2002
+00:11 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate: te fuiste
+02:05 #debian: 8/<g >/caphusog8/>g eslocate: no idea
+02:05 #debian: 8/<g >/quinlang8/>g eslocate: portmap is used for lots of stuff, see /etc/rpc
+02:06 #debian: 8/<g >/quinlang8/>g eslocate: all generally insecure too
+02:07 #debian: 8/<g >/sockg8/>g eslocate: In all reality, you probably don't need portmap.
+02:07 #debian: 8/<g >/sockg8/>g eslocate: assuming you don't want nfs.
+--- Log closed Thu Mar 07 02:30:57 2002
+--- Log opened Thu Mar 07 13:05:42 2002
+--- Log closed Thu Mar 07 14:07:40 2002
+--- Log opened Fri Mar 08 14:01:36 2002
+14:01 #linuxlatino: 8/<g >/cmdg8/>g eslocate estas?
+--- Log closed Fri Mar 08 14:01:48 2002
+--- Log opened Fri Mar 08 14:14:52 2002
+--- Log closed Fri Mar 08 14:15:32 2002
+--- Log opened Fri Mar 08 15:11:22 2002
+17:22 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g wey'
+17:22 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g ?
+17:23 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g ya compre el domaind out-laws.cc en un promedio de 24 hora lo activan!!!! jojojo
+17:25 8/[g4/msg8/(</Murc-Doc8/)-g8/]g tato
+17:25 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g en ka?
+17:26 8/[g4/msg8/(</Murc-Doc8/)-g8/]g lo vas a poner en tu comp o algo?
+17:27 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g si en mi comp!
+17:27 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g con el apache!
+17:27 8/[g4/msg8/(</Murc-Doc8/)-g8/]g vacano
+17:27 8/[g4/msg8/(</Murc-Doc8/)-g8/]g y en cuanto
+17:28 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g $29.90 por 2 ano!
+17:28 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g y  cada ano $15
+17:28 8/[g4/msg8/(</Murc-Doc8/)-g8/]g ok
+17:28 8/[g4/msg8/(</Murc-Doc8/)-g8/]g hablamo ahorita entonce
+17:29 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g tato
+21:25 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g loco
+21:26 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g ?
+21:28 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g compile el kernl
+21:29 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g kernel 
+21:29 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g instale quota y los modules de ISCSI
+21:29 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g lo de la camara no lo ise por k usted no me dijo como e
+22:27 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g shit dejeme ir a cagar!
+22:40 8/[g</Murc-Doc8/(4/~nobody@pool-151-202-183-137.ny5030.east.verizon.net8/)g8/]g brb
+--- Log closed Fri Mar 08 23:42:56 2002
+--- Log opened Sun Mar 10 17:52:00 2002
+--- Log closed Sun Mar 10 17:52:19 2002
+--- Log opened Sun Mar 10 17:53:04 2002
+21:13 8/[g</VERT|GO8/(4/~admin@216.25.165.988/)g8/]g man  como es que se llama el pinguino
+21:13 8/[g</VERT|GO8/(4/~admin@216.25.165.988/)g8/]g tux
+21:13 8/[g4/msg8/(</VERT|GO8/)-g8/]g si
+21:13 8/[g</VERT|GO8/(4/~admin@216.25.165.988/)g8/]g okas
+21:13 8/[g</VERT|GO8/(4/~admin@216.25.165.988/)g8/]g :)
+--- Log closed Sun Mar 10 21:13:39 2002
+--- Log opened Mon Mar 11 13:27:13 2002
+--- Log closed Mon Mar 11 16:14:08 2002
+--- Log opened Mon Mar 11 21:25:48 2002
+21:25 #linuxlatino: 8/<g >/E0xg8/>g eslocate que se cuenta ?
+21:34 #linuxlatino: 8/<g >/E0xg8/>g eslocate te fuiste ?
+--- Log closed Mon Mar 11 21:43:48 2002
+--- Log opened Mon Mar 11 23:45:10 2002
+--- Log closed Tue Mar 12 00:02:35 2002
+--- Log opened Tue Mar 12 00:04:58 2002
+--- Log closed Tue Mar 12 00:23:19 2002
+--- Log opened Tue Mar 12 12:48:34 2002
+13:07 8/[g4/msg8/(</maz8/)-g8/]g dimelo
+--- Log closed Tue Mar 12 13:07:26 2002
+--- Log opened Tue Mar 12 13:10:24 2002
+--- Log closed Tue Mar 12 14:42:27 2002
+--- Log opened Tue Mar 12 15:10:37 2002
+15:20 8/[g</sysmode8/(4/~user@k31.viikki.hoasnet.fi8/)g8/]g hey
+15:20 8/[g</sysmode8/(4/~user@k31.viikki.hoasnet.fi8/)g8/]g estas?
+15:20 8/[g</sysmode8/(4/~user@k31.viikki.hoasnet.fi8/)g8/]g ufh
+15:21 8/[g</sysmode8/(4/~user@k31.viikki.hoasnet.fi8/)g8/]g nope
+--- Log closed Tue Mar 12 15:47:22 2002
+--- Log opened Wed Mar 13 09:22:08 2002
+--- Log closed Wed Mar 13 10:19:25 2002
+--- Log opened Wed Mar 13 12:48:14 2002
+--- Log closed Wed Mar 13 14:01:39 2002
+--- Log opened Wed Mar 13 15:45:08 2002
+16:18 #linuxlatino: 8/<g >/sysmodeg8/>g eslocate
+--- Log closed Wed Mar 13 16:18:31 2002
+--- Log opened Wed Mar 13 17:01:27 2002
+--- Log closed Wed Mar 13 17:19:04 2002
+--- Log opened Wed Mar 13 17:57:56 2002
+17:58 8/[g4/msg8/(</slocate8/)-g8/]g hey
+17:58 8/[g</slocate8/(4/quico@pool-162-83-239-143.ny5030.east.verizon.net8/)g8/]g hey
+18:31 ?/ (*) Murc-Docg is AWAY at 17:29:55 : not theare!! less heare!!
+18:47 8/[g4/msg8/(</apt8/)-g8/]g news #debian latest
+18:48 8/[g4/msg8/(</apt8/)-g8/]g news read 5
+--- Log closed Wed Mar 13 19:18:42 2002
+--- Log opened Wed Mar 13 19:24:42 2002
+19:52 8/[g</sysmode8/(4/~user@k31.viikki.hoasnet.fi8/)g8/]g estas?
+20:08 8/[g4/msg8/(</sysmode8/)-g8/]g dime
+--- Log closed Wed Mar 13 20:08:09 2002
+--- Log opened Wed Mar 13 20:26:02 2002
+21:22 8/[g</[K]AME[L]8/(4/~mnm@200.80.27.958/)g8/]g tas che ?
+--- Log closed Wed Mar 13 21:23:38 2002
+--- Log opened Thu Mar 14 12:47:52 2002
+13:25 #linux: 8/<g >/Lozvareg8/>g eslocate: You could use a dcc-aware IRC proxy like tircproxy
+13:26 #linux: 8/<g >/Lozvareg8/>g eslocate: I don't know of a perfect solution though.
+--- Log closed Thu Mar 14 13:44:23 2002
+--- Log opened Thu Mar 14 15:20:44 2002
+15:24 #linuxlatino: 8/<g+>/latreg8/>g eslocate
+--- Log closed Thu Mar 14 15:49:22 2002
+--- Log opened Thu Mar 14 16:25:40 2002
+16:44 #linuxlatino: 8/<g >/E0xg8/>g eslocate dimelo
+16:44 #linuxlatino: 8/<g >/E0xg8/>g eslocate si tu sabe como es
+16:49 #linuxlatino: 8/<g >/E0xg8/>g eslocate si pero ahora mismo no toy en eso par el segundo
+--- Log closed Thu Mar 14 16:53:42 2002
+--- Log opened Thu Mar 14 22:25:58 2002
+22:30 8/[g4/msg8/(</X@channels.undernet.org8/)-g8/]g op #linuxlatino c0rEd 
+22:33 #linuxlatino: 8/<g@>/c0rEdg8/>g eslocate: te vas
+--- Log closed Thu Mar 14 22:33:51 2002
+--- Log opened Thu Mar 14 22:48:21 2002
+23:14 #linuxlatino: 8/<g >/E0xg8/>g eslocate :P
+--- Log closed Thu Mar 14 23:37:55 2002
+--- Log opened Fri Mar 15 10:31:03 2002
+10:47 8/[g</Murc-Doc8/(4/~Default@pool-151-202-184-105.ny5030.east.verizon.net8/)g8/]g k lo kz
+--- Log closed Fri Mar 15 11:14:47 2002
+--- Log opened Fri Mar 15 14:51:27 2002
+--- Log closed Fri Mar 15 15:51:12 2002
+--- Log opened Sat Mar 16 00:02:18 2002
+01:26 #linuxlatino: 8/<g >/E0xg8/>g eslocate ventana equivocada
+--- Log closed Sat Mar 16 01:39:54 2002
+--- Log opened Sat Mar 16 14:06:00 2002
+14:14 #linuxlatino: 8/<g >/[Matias]g8/>g eslocate: hola?
+15:04 #irssi: 8/<g >/Hang8/>g eslocate: sorry, the batteries of my chrystal ball ran out yesterday.
+--- Log closed Sat Mar 16 15:06:06 2002
+--- Log opened Sat Mar 16 15:15:26 2002
+15:15 8/[g4/msg8/(</X@channels.undernet.org8/)-g8/]g login slocate freebsd
+15:53 8/[g4/msg8/(</X@channels.undernet.org8/)-g8/]g op #linuxlatino slocate
+15:53 8/[g4/msg8/(</X@channels.undernet.org8/)-g8/]g login slocate freebsd
+15:53 8/[g4/msg8/(</X@channels.undernet.org8/)-g8/]g op #linuxlatino slocate
+--- Log closed Sat Mar 16 18:08:14 2002
+--- Log opened Sat Mar 16 20:17:34 2002
+20:26 #linuxlatino: 8/<g >/cmdg8/>g eslocate: el puerto sigue abierto?
+20:26 8/[g</Chavoner48/(4/~m270@radio-112-203.poa.terraempresas.com.br8/)g8/]g 4#Chavon Entra apoyanos...!!!
+--- Log closed Sat Mar 16 20:33:40 2002
+--- Log opened Sat Mar 16 20:46:56 2002
+20:51 #linuxlatino: 8/<g >/cmdg8/>g eslocate: duro como 9 horas para recrear el sistema ayer
+--- Log closed Sat Mar 16 20:54:43 2002
+--- Log opened Sat Mar 16 21:00:14 2002
+--- Log closed Sat Mar 16 21:14:28 2002
+--- Log opened Sat Mar 16 21:15:51 2002
+--- Log opened Sat Mar 16 22:01:08 2002
+--- Log closed Sat Mar 16 22:10:58 2002
+--- Log opened Sat Mar 16 22:23:07 2002
+23:41 8/[g</Murc-Doc8/(4/~Default@151.202.184.1058/)g8/]g dimelos
+23:50 8/[g4/msg8/(</Murc-Doc8/)-g8/]g k lo k
+23:55 8/[g</Murc-Doc8/(4/~Default@151.202.184.1058/)g8/]g cheka
+23:55 8/[g</Murc-Doc8/(4/~Default@151.202.184.1058/)g8/]g acepta esto
+--- Log closed Sat Mar 16 23:56:39 2002
+--- Log opened Sun Mar 17 11:14:18 2002
+11:24 #linuxlatino: 8/<g >/cmdg8/>g eslocate: todos tus discos se llaman wd*?
+11:53 8/[g</Chantya8/(4/~Martin@200.43.108.2298/)g8/]g hola
+--- Log closed Sun Mar 17 12:43:45 2002
+--- Log opened Sun Mar 17 13:14:15 2002
+--- Log closed Sun Mar 17 14:38:27 2002
+--- Log opened Mon Mar 18 12:28:00 2002
+12:42 8/[g</cmd8/(4/~cmd@k31.viikki.hoasnet.fi8/)g8/]g si
+--- Log closed Mon Mar 18 15:21:09 2002
+--- Log opened Mon Mar 18 15:26:26 2002
+--- Log closed Mon Mar 18 17:36:06 2002
+--- Log opened Tue Mar 19 13:38:36 2002
+14:15 #linuxlatino: 8/<g >/VERT|GOg8/>g eslocate: 
+14:33 #linuxlatino: 8/<g >/Stong8/>g eslocate, vertigo: http://www.bibletime.de/
+--- Log closed Tue Mar 19 15:28:53 2002
+--- Log opened Wed Mar 20 12:46:07 2002
+12:48 8/[g</VERT|GO8/(4/~slack@208.234.35.2188/)g8/]g amne
+12:48 8/[g</VERT|GO8/(4/~slack@208.234.35.2188/)g8/]g =
+12:48 8/[g</VERT|GO8/(4/~slack@208.234.35.2188/)g8/]g cuidate
+--- Log closed Wed Mar 20 12:52:20 2002
+--- Log opened Wed Mar 20 12:55:24 2002
+15:37 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-106.ny5030.east.verizon.net8/)g8/]g dimeloz
+17:07 8/[g4/msg8/(</Murc-Doc8/)-g8/]g loco
+--- Log closed Wed Mar 20 17:07:36 2002
+--- Log opened Wed Mar 20 23:01:50 2002
+--- Log closed Wed Mar 20 23:27:36 2002
+--- Log opened Thu Mar 21 15:05:57 2002
+--- Log closed Thu Mar 21 15:57:04 2002
+--- Log opened Mon Mar 25 17:31:00 2002
+--- Log closed Tue Mar 26 00:04:45 2002
+--- Log opened Tue Mar 26 12:30:53 2002
+12:45 #linuxlatino: 8/<g >/c0rEdg8/>g eslocate estas 
+13:43 #linuxlatino: 8/<g >/Le0g8/>g eslocate, que tal?
+--- Log closed Tue Mar 26 13:43:27 2002
+--- Log opened Fri Mar 29 13:23:26 2002
+13:25 8/[g</Murc-Doc8/(4/~Default@pool-151-202-82-82.ny5030.east.verizon.net8/)g8/]g muchacho aki bajando a blade 2 y uno munekito loco mortales
+13:26 8/[g</Murc-Doc8/(4/~Default@pool-151-202-82-82.ny5030.east.verizon.net8/)g8/]g ahh y the one tambien
+--- Log closed Fri Mar 29 14:44:09 2002
+--- Log opened Sat Mar 30 12:23:29 2002
+--- Log closed Sat Mar 30 13:25:20 2002
+--- Log opened Sat Mar 30 14:00:41 2002
+--- Log closed Sun Mar 31 01:10:36 2002
+--- Log opened Wed Apr 03 17:44:58 2002
+--- Log closed Wed Apr 03 21:58:38 2002
+--- Log opened Thu Apr 04 14:26:37 2002
+--- Log closed Thu Apr 04 15:17:34 2002
+--- Log opened Sun Apr 14 15:24:10 2002
+15:48 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g k lo ks
+15:48 8/[g4/msg8/(</Murc-Doc8/)-g8/]g dimelo
+15:49 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g trankilidad
+15:49 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g ?
+15:49 8/[g4/msg8/(</Murc-Doc8/)-g8/]g amja
+15:49 8/[g4/msg8/(</Murc-Doc8/)-g8/]g y ud
+15:49 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g =
+15:49 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g ta jugando tu!! k vi ahi k te taban hablando de eso
+15:49 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g ?
+15:49 8/[g4/msg8/(</Murc-Doc8/)-g8/]g no ombe
+15:50 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g eheheh
+15:50 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g tu no sabe k yo e puesto E
+15:50 8/[g4/msg8/(</Murc-Doc8/)-g8/]g amja?
+15:50 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g y toy ahi cambiandole los themes
+15:50 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g y le puse uno ahi
+15:50 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g parece k no lo cojio
+15:50 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g apo er maldito como k se exploto
+15:50 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g y no me keria abrir los menus
+15:51 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g y borre el theme
+15:51 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g y subio con el theme k trae de default
+15:51 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g ahora no me deja cambia pa los otros themes y sube con un reguero de errores
+15:51 8/[g</Murc-Doc8/(4/~Default@pool-151-202-83-227.ny5030.east.verizon.net8/)g8/]g heheeh!
+--- Log closed Sun Apr 14 15:59:52 2002
+--- Log opened Thu Apr 18 17:41:43 2002
+--- Log closed Fri Apr 19 01:08:47 2002
+--- Log opened Sat Apr 20 08:06:34 2002
+--- Log opened Tue Apr 23 17:25:14 2002
+--- Log closed Wed Apr 24 01:00:28 2002
+--- Log opened Wed Apr 24 19:40:35 2002
+21:55 8/[g</AMEVA8/(4/~AMEVA@pool-151-202-183-24.ny5030.east.verizon.net8/)g8/]g wazaa
+21:55 8/[g</AMEVA8/(4/~AMEVA@pool-151-202-183-24.ny5030.east.verizon.net8/)g8/]g k lo k!
+--- Log closed Thu Apr 25 01:36:28 2002
+--- Log opened Thu Apr 25 17:24:02 2002
+22:46 #linuxlatino: 8/<g >/E0xg8/>g eslocate
+--- Log closed Fri Apr 26 02:54:21 2002
+--- Log opened Fri Apr 26 13:10:29 2002
+--- Log closed Fri Apr 26 13:20:02 2002
+--- Log opened Fri Apr 26 14:48:03 2002
+14:58 #linuxlatino: 8/<g >/L-i-n-u-Xg8/>g eslocate 1dimelo hermano
+--- Log closed Fri Apr 26 15:24:40 2002
+--- Log opened Fri Apr 26 22:34:12 2002
+23:15 8/[g</Murc-Doc8/(4/~newbie@pool-151-202-182-79.ny5030.east.verizon.net8/)g8/]g men
+23:39 8/[g</Murc-Doc8/(4/~newbie@pool-151-202-182-79.ny5030.east.verizon.net8/)g8/]g agarrame ahi
+23:40 8/[g</Murc-Doc8/(4/~newbie@pool-151-202-182-79.ny5030.east.verizon.net8/)g8/]g http://lists.suse.com/archive/suse-linux-e/2001-Aug/3075.html
+--- Log closed Sat Apr 27 00:04:33 2002
+--- Log opened Sat Apr 27 16:03:50 2002
+--- Log closed Sat Apr 27 19:22:47 2002
+--- Log opened Wed May 01 12:12:28 2002
+13:00 #linuxlatino: 8/<g >/Ghost-g8/>g eslocate tu que usas debian
+13:00 #linuxlatino: 8/<g >/Ghost-g8/>g eslocate: sí estoy en windows. en esta
+13:11 #linuxlatino: 8/<g >/E0xg8/>g eslocate !
+14:08 #linuxlatino: 8/<g >/Ghost-g8/>g eslocate
+--- Log closed Wed May 01 14:09:25 2002
+--- Log opened Thu May 02 17:24:12 2002
+--- Log closed Thu May 02 19:04:44 2002
+--- Log opened Thu May 02 21:37:00 2002
+22:45 #linuxlatino: 8/<g >/VERT|GOg8/>g eslocate
+--- Log closed Thu May 02 22:58:12 2002
+--- Log opened Fri May 03 17:34:09 2002
+--- Log closed Fri May 03 17:41:43 2002
+--- Log opened Mon May 06 16:59:41 2002
+18:45 8/[g</EaGlE]8/(4/Iloveagles@dup-200-65-164-243.prodigy.net.mx8/)g8/]g ola
+18:45 8/[g</EaGlE]8/(4/Iloveagles@dup-200-65-164-243.prodigy.net.mx8/)g8/]g estas ahi?
+19:34 #linuxlatino: 8/<g >/Ghost-g8/>g eslocate?
+19:35 #linuxlatino: 8/<g >/Ghost-g8/>g eslocate?
+19:59 #linuxlatino: 8/<g >/L-i-n-u-Zg8/>g eslocate 1dimelo black brother
+21:37 #linuxlatino: 8/<g >/VERTIGOg8/>g eslocate
+--- Log closed Tue May 07 00:23:18 2002
+--- Log opened Tue May 07 14:38:49 2002
+16:15 #linuxlatino: 8/<g >/viZardg8/>g eslocate, no es lo mismo, pero todo abosolutamente todo sale excepto debian
+16:27 #linuxlatino: 8/<g@>/Blopag8/>g eslocate ;-)
+--- Log closed Tue May 07 23:09:47 2002
+--- Log opened Wed May 08 23:11:46 2002
+--- Log closed Thu May 09 00:11:41 2002
+--- Log opened Thu May 09 16:46:36 2002
+16:54 #linux.do: 8/<g+>/vi_g8/>g eslocate :)
+--- Log closed Thu May 09 17:21:05 2002
+--- Log opened Thu May 09 17:47:51 2002
+18:19 #linuxlatino: 8/<g >/Ghost-g8/>g eslocate saca ese bot! Linux|B0T
+18:21 #linuxlatino: 8/<g+>/VERTIGOg8/>g eslocate parece que no esta !
+20:51 #linuxlatino: 8/<g+>/VERTIGOg8/>g eslocate
+--- Log closed Thu May 09 22:55:22 2002
+--- Log opened Fri May 10 14:48:43 2002
+--- Log closed Fri May 10 15:20:26 2002
+--- Log opened Fri May 10 17:27:03 2002
+--- Log closed Fri May 10 17:31:16 2002
+--- Log opened Sat May 11 15:40:24 2002
+19:50 8/[g</Kalavera8/(4/Kalavera@200.41.99.48/)g8/]g estas ahi? 
+--- Log closed Sat May 11 19:51:12 2002
+--- Log opened Sat May 11 22:51:08 2002
+--- Log closed Sun May 12 03:19:21 2002
+--- Log opened Sun May 12 11:50:09 2002
+12:08 8/[g4/msg8/(</X@channels.undernet.org8/)-g8/]g op #linuxlatino slocate
+12:47 #linuxlatino: 8/<g >/E0xg8/>g eslocate ladra
+21:18 #linuxlatino: 8/<g >/HellMindg8/>g eslocate decile a mafia que deje de actuar como un pendejito !
+--- Log closed Sun May 12 22:05:23 2002
+--- Log opened Wed May 15 15:33:29 2002
+--- Log closed Thu May 16 00:15:25 2002
